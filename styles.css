@@ -1,0 +1,116 @@
+/* main classes */
+.header {
+    text-align: center;
+    font-size: 40px;
+    color:white;
+}
+ 
+.body {
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+.background{
+    background-color: black;
+}
+
+.links {
+    /*magenta*/
+    /*color:rgb(205, 86, 223);*/
+
+    /*green*/
+    /*color: rgb(60, 179, 113);*/
+    
+    /*reddish (lol)*/
+    /*color: rgb(255, 0, 122);*/
+    
+    /*dark cyan*/
+    /*color: rgb(0,139,139);*/
+
+    /**/
+    color: rgb(0,191,255);
+}
+
+.photo {
+    width: 400px;
+    height: 500px;
+}
+
+/* containers */
+.container {
+  display: flex;           /* Activates flexbox layout */
+  flex-direction: row;
+  gap: 40px;               /* Creates space between image and text */
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.col_container {
+  display: flex;           /* Activates flexbox layout */
+  flex-direction: column;
+  gap: 40px;               /* Creates space between image and text */
+  padding: 20px;
+}
+
+.centered_container {
+    display: flex;           /* Activates flexbox layout */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.directory {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color:darkblue;
+  width: 20%;
+  max-width: 800px;
+  min-width: 300px;
+  min-height: 453px;
+  border: 3px solid white;
+}
+
+.banner {
+    background-image: url('assets/photos/snow_lake.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat; /*fills, no fracturing*/
+}
+
+/* used for pages that have photo has header/banner */
+.photo_headers {
+    width: 750px;
+    height: 453px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quotations {
+    font-family: Georgia;
+    text-align: left;
+    line-height: 40px; /*adds what appears as double spacing between lines*/
+    margin: 20px;
+}
+
+/* for study.html */
+/*
+Source - https://stackoverflow.com/a/33964257
+Posted by Josh Crozier
+Retrieved 2025-11-26, License - CC BY-SA 3.0
+*/
+progress {
+  text-align: center;
+}
+progress:after {
+  content: attr(value)'%';
+}
