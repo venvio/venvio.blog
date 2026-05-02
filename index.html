@@ -67,16 +67,24 @@
 
     <!-- button -->
     <script type="text/javascript">
-        var clicks = 0;
+        // load saved value
+        var clicks = localStorage.getItem("clicks") || 0;
+
+        // update  UI on page load
+        document.addEventListener("DOMContentLoaded", function () {
+
+            document.getElementById("clicks").innerHTML = clicks;
+        });
 
         function onClick() {
-            clicks += 1;
+            clicks++;
+            localStorage.setItem("clicks", clicks); //persists?
             document.getElementById("clicks").innerHTML = clicks;
         };
 
     </script>
     <button type="button" onClick="onClick()">Click me</button>
-    <p class="body">Clicks: <a id="clicks">0</a></p>
+    <p class="body">Clicks: <span id="clicks">0</span></p>
 
     <!-- External Links -->
     <div>
