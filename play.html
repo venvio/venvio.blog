@@ -1,21 +1,50 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <title>helllooooo</title>
-    <!-- browser icon -->
-    <link rel="icon" href="favicon.ico">
-    <link rel='stylesheet' href='styles.css'>
 </head>
-
 <style>
+p {
+    color: white;
+    animation-duration: 1s;
+    animation-name: slide-in;
+}
 
+.button {
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 
+    animation-duration: 1s;
+    animation-name: slide-in;
+
+}
+@keyframes slide-in {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
 </style>
-
-<body>
+<body style='background-color: black'>
 <main>
-    <a href='index.html' style='font-size: 30px; color: pink;'>&lt;&lt; Home</a>
-    <p>testing grounds</p>
+    <!-- link to home -->
+    <a href='index.html' class='links' style='font-size: 30px;'>&lt;&lt; Home</a>
+
+
+    <p>hello world ashdfaksdf</p>
+
+    <button class='button'>button</button>
 </main>
 </body>
 </html>

@@ -3,91 +3,80 @@
 <head>
     <title>venv_io</title>
     <!-- browser icon -->
-    <link rel="icon" href="favicon.ico">
+    <link rel='icon' href='favicon.ico'>
     <link rel='stylesheet' href='styles.css'>
 </head>
+
+<style>
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/*
+Source - https://stackoverflow.com/a/8709295
+Posted by Ayush, modified by community. See post 'Timeline' for change history
+Retrieved 2026-05-06, License - CC BY-SA 3.0
+*/
+
+#container {
+  height: 400px;
+  width: 900px;
+  position: relative;
+}
+#image {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#text {
+  z-index: 1;
+  position: absolute;
+  font-size: 30px;
+  left: 120px;
+  right: 100px;
+  top: 150px;
+}
+
+</style>
+
 
 <body class='background'>
 <main>
 <!--holds entire page-->
 <div class='col_container'>
-    <!-- banner -->
-    <div class='container'>
 
-        <div>
-            <iframe src="https://giphy.com/embed/NpdYZqpzrmZxAiy0TR" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/piracy-dolloallin-dollo-all-in-NpdYZqpzrmZxAiy0TR"></a></p>
-        </div>
-
-        <div class='col_container'>
-            <div>
-                <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F7F7F7&center=true&width=435&lines=Welcome+to+venv_io's+site+%5E_%5E;Thanks+for+visiting!" alt="Typing SVG" /></a>
-            </div>
-
-            <div>
-                <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. My undergrad was in psychology.<br><br> Mostly, I update the site with journal-style entries on the <a href='thoughts.html' class='links'>thoughts</a> page.</a> The other two main pages, <a href='music.html' class='links'>music</a> and <a href='books.html' class='links'>books</a> showcase my favorites from these two art forms.</p>
-            </div>
-        </div>
-    </div>
-
-    <div>
-    <!-- links -->
-    <p style='text-align: center; font-size: 30px; color: white'> 
-        | <a href='thoughts.html' class='links'>Thoughts</a> | 
-        <a href='music.html' class='links'>Music</a> | 
-        <a href='books.html' class='links'>Books</a> | 
-    </div>
-
-    <!-- Summer Disconnect -->
-    <div class='container'>
-        <!-- video -->
-        <div>
-            <iframe src="https://giphy.com/embed/ew4Pnwa3PPbAirVUjF" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/chill-guy-chillguy-dolloallin-ew4Pnwa3PPbAirVUjF"></a></p>
-        </div>
-        
-        <!-- accompanying text -->
-        <div>
-            <h1 class='header'><a href='disconnect.html' class='links'>Summer Disconnect Challenge</a></h1>
-            <p class='body'>For this summer I will be changing the way I interact with the internet, avoiding many of the platforms/features that prioritze maximizing engagement. Instead, I will adopt a more focused and intentional approach.</p>
+    <div class='container'
+        <!-- banner -->
+        <div id='container'>
+            <img id='image' src='assets/photos/horizon-banner.png'>
+            <!-- banner_links -->
+            <p id='text'>
+                <a href='thoughts.html'>Thoughts</a>
+                <a href='music.html' class='banner_links'>Music</a> 
+                <a href='books.html' class='banner_links'>Books</a> 
+                <a href='challenges.html' class='banner_links'>Challenges</a>
+            </p>
         </div>
     </div>
 
     <div class='container'>
-
-        <div class='container2'>
-            <p class='header'>&#127926;Album Spotlight&#127926;<br><i>Chopin Orbit</i>, Hayato Sumino</p>
-            <center><iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/chopin-orbit/1851536451"></iframe><center>
-        </div>
-
-        <div class='container2'>
-            <p class='header'>Currently reading:</p>
-            <img src='assets/photos/books/gameofthrones.jpg' class='photo'>
-        </div>
-
+        <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. My undergrad was in psychology.<br><br> Mostly, I update the site with journal-style entries on the <a href='thoughts.html' class='links'>thoughts</a> page.</a> The other two main pages, <a href='music.html' class='links'>music</a> and <a href='books.html' class='links'>books</a> showcase my favorites from these two art forms.</p>
     </div>
 
-    <!-- button -->
-    <script type="text/javascript">
-        // load saved value
-        var clicks = localStorage.getItem("clicks") || 0;
 
-        // update  UI on page load
-        document.addEventListener("DOMContentLoaded", function () {
 
-            document.getElementById("clicks").innerHTML = clicks;
-        });
-
-        function onClick() {
-            clicks++;
-            localStorage.setItem("clicks", clicks); //persists?
-            document.getElementById("clicks").innerHTML = clicks;
-        };
-
-    </script>
-    <button type="button" onClick="onClick()">Click me</button>
-    <p class="body">Clicks: <span id="clicks">0</span></p>
 
     <!-- External Links -->
-    <div>
+    <div class='container'>
         <p class='body'>
         <b>External Links:</b><br>
         |<a href='https://www.youtube.com/@venv_io' class='links'>YouTube</a> | 
@@ -98,7 +87,7 @@
     </div>
 
     <!-- how many people have visited the site -->
-    <div style='text-align: left;'>
+    <div class='container' style='text-align: left;'>
         <script type="text/javascript" src="https://www.counters-free.net/count/isur"></script><br>
     </div> 
 
@@ -107,7 +96,7 @@
     <div>
         <p class='body' style='text-align: center;'>© 2026 Joshua Cochran<br>
         Created: 04/10/2025<br>
-        Updated: 05/01/2026 </p>
+        Updated: 05/06/2026 </p>
     </div>
 
     <a href='play.html'>playground</a>

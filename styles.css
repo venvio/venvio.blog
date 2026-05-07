@@ -1,3 +1,12 @@
+/* classes for interactivity */
+.hover-effect {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.hover-effect:hover{
+    color: red;
+}
 /* main classes */
 .header {
     text-align: center;
@@ -15,18 +24,22 @@
     background-color: black;
 }
 
+.banner_links {
+    color: black;
+}
+
 .links {
     /*magenta*/
     /*color:rgb(205, 86, 223);*/
 
     /*green*/
-    color: rgb(60, 179, 113);
+    /*color: rgb(60, 179, 113);*
     
     /*reddish (lol)*/
     /*color: rgb(255, 0, 122);*/
     
     /*dark cyan*/
-    /*color: rgb(0,139,139);*/
+    color: rgb(0,139,139);
 
     /**/
    /* color: rgb(0,191,255);*/
@@ -44,6 +57,8 @@
   gap: 40px;               /* Creates space between image and text */
   padding: 20px;
   margin: 20px;
+  max-width: 800px;
+  min-width: 300px;
 }
 
 .container2 {
