@@ -26,17 +26,6 @@ Source - https://stackoverflow.com/a/8709295
 Posted by Ayush, modified by community. See post 'Timeline' for change history
 Retrieved 2026-05-06, License - CC BY-SA 3.0
 */
-
-#container {
-  height: 400px;
-  width: 900px;
-  position: relative;
-}
-#image {
-  position: relative;
-  left: 0;
-  top: 0;
-}
 #text {
   z-index: 1;
   position: absolute;
@@ -46,62 +35,56 @@ Retrieved 2026-05-06, License - CC BY-SA 3.0
   top: 150px;
 }
 
+#image {
+  width: 100%;
+}
 </style>
-
 
 <body class='background'>
 <main>
-<!--holds entire page-->
-<div class='col_container'>
 
-    <div class='container'
-        <!-- banner -->
-        <div id='container'>
-            <img id='image' src='assets/photos/horizon-banner.png'>
-            <!-- banner_links -->
-            <p id='text'>
-                <a href='thoughts.html'>Thoughts</a>
-                <a href='music.html' class='banner_links'>Music</a> 
-                <a href='books.html' class='banner_links'>Books</a> 
-                <a href='challenges.html' class='banner_links'>Challenges</a>
-            </p>
-        </div>
+    <!-- banner -->
+    <div class='banner'>
+        <!-- banner_links -->
+        <p id='text'>
+            <a href='thoughts.html'>Thoughts</a>
+            <a href='music.html'>Music</a> 
+            <a href='books.html'>Books</a> 
+            <a href='challenges.html'>Challenges</a>
+        </p>
     </div>
 
     <div class='container'>
         <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. My undergrad was in psychology.<br><br> Mostly, I update the site with journal-style entries on the <a href='thoughts.html' class='links'>thoughts</a> page.</a> The other two main pages, <a href='music.html' class='links'>music</a> and <a href='books.html' class='links'>books</a> showcase my favorites from these two art forms.</p>
     </div>
 
-
-
-
     <!-- External Links -->
     <div class='container'>
         <p class='body'>
-        <b>External Links:</b><br>
-        |<a href='https://www.youtube.com/@venv_io' class='links'>YouTube</a> | 
-        <a href='https://www.twitch.tv/venv_io' class='links'>Twitch</a> | 
-        <a href='https://github.com/venvio' class='links'>GitHub</a> |
-        <a href='mailto:waltwest@outlook.com' class='links'>Email</a>|
+        <b>External Links:</b>
+        <a href='https://www.youtube.com/@venv_io' class='links'>YouTube</a> 
+        <a href='https://www.twitch.tv/venv_io' class='links'>Twitch</a> 
+        <a href='https://github.com/venvio' class='links'>GitHub</a> 
+        <a href='mailto:waltwest@outlook.com' class='links'>Email</a>
         </p>
     </div>
 
-    <!-- how many people have visited the site -->
-    <div class='container' style='text-align: left;'>
-        <script type="text/javascript" src="https://www.counters-free.net/count/isur"></script><br>
-    </div> 
+    <div class='container'>
+        <!-- how many people have visited the site -->
+        <div class='container'>
+            <script type="text/javascript" src="https://www.counters-free.net/count/isur"></script><br>
+        </div> 
 
-
-    <!-- copyright info -->
-    <div>
-        <p class='body' style='text-align: center;'>© 2026 Joshua Cochran<br>
-        Created: 04/10/2025<br>
-        Updated: 05/06/2026 </p>
+        <!-- copyright info -->
+        <div>
+            <p class='body'>© 2026 Joshua Cochran<br>
+            Created: 04/10/2025<br>
+            Updated: 05/09/2026 </p>
+        </div>
     </div>
 
     <a href='play.html'>playground</a>
-        
-</div>
+
 </main>
 </body>
 </html>

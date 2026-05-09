@@ -18,14 +18,9 @@
     text-align: left;
     color: white;
     font-size: 18px;
-    padding: 10px;
 }
 .background{
     background-color: black;
-}
-
-.banner_links {
-    color: black;
 }
 
 .links {
@@ -54,11 +49,16 @@
 .container {
   display: flex;           /* Activates flexbox layout */
   flex-direction: row;
-  gap: 40px;               /* Creates space between image and text */
-  padding: 20px;
-  margin: 20px;
   max-width: 800px;
   min-width: 300px;
+}
+
+.banner {
+    height: 500px;
+    background-image: url('assets/photos/horizon-banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container2 {
@@ -84,23 +84,6 @@
     gap: 20px;
 }
 
-.directory {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color:darkblue;
-  width: 20%;
-  max-width: 800px;
-  min-width: 300px;
-  min-height: 453px;
-  border: 3px solid white;
-}
-
-.banner {
-    background-image: url('assets/photos/snow_lake.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat; /*fills, no fracturing*/
-}
 
 /* used for pages that have photo has header/banner */
 .photo_headers {
