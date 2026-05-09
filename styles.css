@@ -58,7 +58,7 @@
     background-image: url('assets/photos/horizon-banner.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .container2 {
