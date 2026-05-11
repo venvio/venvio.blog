@@ -58,6 +58,7 @@
 
 .banner {
     height: 500px;
+    width: 800px;
     background-image: url('assets/photos/horizon-banner.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -81,10 +82,9 @@
 }
 
 .centered_container {
-    display: flex;           /* Activates flexbox layout */
+    display: grid;           /* Activates flexbox layout */
     align-items: center;
     justify-content: center;
-    gap: 20px;
 }
 
 
