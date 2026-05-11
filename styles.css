@@ -47,10 +47,13 @@
 
 /* containers */
 .container {
-  display: flex;           /* Activates flexbox layout */
-  flex-direction: row;
-  max-width: 800px;
-  min-width: 300px;
+    gap: 40px;
+    display: flex;           /* Activates flexbox layout */
+    flex-direction: row;
+    max-width: 800px;
+    min-width: 300px;
+    justify-content: flex-start;
+    margin-left: 0;
 }
 
 .banner {
