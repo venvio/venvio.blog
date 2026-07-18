@@ -2,6 +2,23 @@
 html { box-sizing: border-box;}*, *:before, *:after{ box-sizing: inherit;}html, body { height: 100%;}
 */
 
+*,
+*::before,
+*::after, {
+    box-sizing: boder-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* ids */
+/* used for index.html banner links */
+#banner_text {
+    position: relative;
+    font-size: 50px;
+}
+
 /* classes for interactivity */
 .hover-effect {
     color: white;
@@ -45,14 +62,14 @@ html { box-sizing: border-box;}*, *:before, *:after{ box-sizing: inherit;}html, 
 }
 
 /* containers */
+.page_container {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+}
 .container {
-    gap: 40px;
     display: flex;           /* Activates flexbox layout */
     flex-direction: row;
-    max-width: 800px;
-    min-width: 300px;
-    justify-content: flex-start;
-    margin-left: 0;
+    justify-content: center;
 }
 
 .container2 {
