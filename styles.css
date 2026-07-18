@@ -1,3 +1,7 @@
+/* dynamic scaling for pages 
+html { box-sizing: border-box;}*, *:before, *:after{ box-sizing: inherit;}html, body { height: 100%;}
+*/
+
 /* classes for interactivity */
 .hover-effect {
     color: white;
@@ -7,6 +11,16 @@
 .hover-effect:hover{
     color: red;
 }
+
+.fade_in_image {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 /* main classes */
 .header {
     text-align: center;
@@ -16,28 +30,13 @@
  
 .body {
     text-align: left;
-    color: white;
-    font-size: 18px;
-}
-.background{
-    background-color: black;
+    color: azure;
+    font-size: 25px;
 }
 
 .links {
-    /*magenta*/
-    /*color:rgb(205, 86, 223);*/
-
-    /*green*/
-    /*color: rgb(60, 179, 113);*
-    
-    /*reddish (lol)*/
-    /*color: rgb(255, 0, 122);*/
-    
     /*dark cyan*/
     color: rgb(0,139,139);
-
-    /**/
-   /* color: rgb(0,191,255);*/
 }
 
 .photo {
@@ -54,15 +53,6 @@
     min-width: 300px;
     justify-content: flex-start;
     margin-left: 0;
-}
-
-.banner {
-    height: 500px;
-    width: 800px;
-    background-image: url('assets/photos/horizon-banner.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .container2 {
@@ -85,6 +75,7 @@
     display: grid;           /* Activates flexbox layout */
     align-items: center;
     justify-content: center;
+    max-width: 1440px;
 }
 
 

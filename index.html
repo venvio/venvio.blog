@@ -2,22 +2,21 @@
 <html lang='en'>
 <head>
     <title>venv_io</title>
-    <!-- browser icon -->
     <link rel='icon' href='logo.ico'>
     <link rel='stylesheet' href='styles.css'>
 </head>
 
 <style>
-
+/* style and animation for links */
 a {
-    color: black;
+    color: rgb(241,195,147);
     text-decoration: none;
     transition: color 0.3s ease;
     padding: 10px;
 }
 
 a:hover {
-    color: red;
+    color: rgb(117,84,55);
 }
 
 
@@ -26,28 +25,29 @@ Source - https://stackoverflow.com/a/8709295
 Posted by Ayush, modified by community. See post 'Timeline' for change history
 Retrieved 2026-05-06, License - CC BY-SA 3.0
 */
-#text {
-  z-index: 1;
-  position: relative;
-  font-size: 30px;
-  left: 150px;
-  right: 100px;
-  top: 150px;
+#banner_text {
+    position: relative;
+    font-size: 50px;
+    left: 0px;
+    right: 100px;
 }
 
-#image {
-  width: 100%;
-}
 </style>
 
-<body class='background'>
+<body style = 'background-color: black'>
 <main>
+
+<!-- holds entire page -->
 <div class='centered_container'>
 
-    <!-- banner -->
-    <div class='banner'>
-        <!-- banner_links -->
-        <p id='text'>
+    <div class='fade_in_image' style='position: relative; left: 600px;>
+        <img src='assets/photos/moon_logo.png' style ='width: 500px; height: 500px'>
+    </div>
+
+    <!-- banner div -->
+    <div class = 'container'style = 'position: relative; top: 400px;'>
+
+        <p id='banner_text'>
             <a href='thoughts.html'>Thoughts</a>
             <a href='music.html'>Music</a> 
             <a href='books.html'>Books</a> 
@@ -55,38 +55,41 @@ Retrieved 2026-05-06, License - CC BY-SA 3.0
         </p>
     </div>
 
-    <div class='container'>
-        <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. My undergrad was in psychology.<br><br> Mostly, I update the site with journal-style entries on the <a href='thoughts.html' class='links'>thoughts</a> page.</a> The other two main pages, <a href='music.html' class='links'>music</a> and <a href='books.html' class='links'>books</a> showcase my favorites from these two art forms.</p>
-    </div>
-
-    <!-- External Links -->
-    <div class='container'>
-        <p class='body'>
-        <b>External Links:</b>
-        <a href='https://www.youtube.com/@venv_io' class='links'>YouTube</a> 
-        <a href='https://www.twitch.tv/venv_io' class='links'>Twitch</a> 
-        <a href='https://github.com/venvio' class='links'>GitHub</a> 
-        <a href='mailto:waltwest@outlook.com' class='links'>Email</a>
+    <!-- about section -->
+    <div class='container' style = 'position: relative; top: 500px;'>
+        <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. My undergrad was in psychology.<br><br> Mostly, I update the site with journal-style entries on the <a href='thoughts.html' >thoughts</a> page.</a> The other two main pages, <a href='music.html'>music</a> and <a href='books.html'>books</a> showcase my favorites from these two art forms. The <a href='challenges.html'>challenges</a> page shows some challenges that I have undertaken for fun.
         </p>
     </div>
 
-    <div class='container'>
-        <!-- how many people have visited the site -->
+    <!-- bottom container -->
+    <div style = 'position: relative; top: 550px; left: 0px; right: 800px;'>
+        <!-- External Links -->
         <div class='container'>
-            <script type="text/javascript" src="https://www.counters-free.net/count/isur"></script><br>
-        </div> 
+            <p class='body'>
+            <b>External Links:</b>
+            <a href='https://www.youtube.com/@venv_io'>YouTube</a> 
+            <a href='https://github.com/venvio'>GitHub</a> 
+            <a href='mailto:waltwest@outlook.com'>Email</a>
+            </p>
+        </div>
 
-        <!-- copyright info -->
-        <div>
-            <p class='body'>© 2026 Joshua Cochran<br>
-            Created: 04/10/2025<br>
-            Updated: 05/11/2026 </p>
+        <div class='container'>
+            <!-- how many people have visited the site -->
+            <div class='container'>
+                <script type="text/javascript" src="https://www.counters-free.net/count/isur"></script><br>
+            </div> 
+
+            <!-- copyright info -->
+            <div>
+                <p class='body'>© 2026 venvio<br>
+                Created: 04/10/2025<br>
+                Updated: 07/17/2026 </p>
+            </div>
         </div>
     </div>
 
-    <a href='play.html'>playground</a>
-
 </div>
+
 </main>
 </body>
 </html>
