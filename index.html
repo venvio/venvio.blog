@@ -3,36 +3,21 @@
 <head>
     <title>venv_io</title>
     <link rel='icon' href='logo.ico'>
-    <link rel='stylesheet' href='styles.css'>
+    <link rel='stylesheet' href='css/styles.css'>
 </head>
 
-<style>
-/* style and animation for links */
-a {
-    color: rgb(241,195,147);
-    text-decoration: none;
-    transition: color 0.3s ease;
-    padding: 10px;
-}
-
-a:hover {
-    color: rgb(117,84,55);
-}
-
-</style>
-
-<body style = 'background-color: black'>
+<body class='home' style='background-color: black'>
 <main>
 
 <!-- holds entire page -->
-<div class='page_container'>
+<div class='page_container fade_in'>
 
-    <div class='fade_in_image'>
-        <img src='assets/photos/moon_logo.png' style ='width: 400px; height: 400px'>
+    <div class='container' >
+        <center><img src='assets/photos/moon_logo.png' id='moon_image'><center>
     </div>
 
     <!-- banner div -->
-    <div class = 'container'>
+    <div class='container' style='background-color: black;'>
 
         <p id='banner_text'>
             <a href='thoughts.html'>Thoughts</a>
@@ -44,13 +29,16 @@ a:hover {
     </div>
 
     <!-- about section -->
-    <div class='container'>
-        <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. My undergrad was in psychology.<br><br> Mostly, I update the site with journal-style entries on the <a href='thoughts.html' >thoughts</a> page.</a> The other two main pages, <a href='music.html'>music</a> and <a href='books.html'>books</a> showcase my favorites from these two art forms. The <a href='challenges.html'>challenges</a> page shows some challenges that I have undertaken for fun.
+    <div class='col_container' style='background-color: black; border: 2px double rgb(241,195,147); padding: 10px;'>
+        <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. My undergrad was in psychology.
+        </p>
+
+        <p class='body'>You can find journal-style entries on the <a href='thoughts.html' >thoughts</a> page.</a> The other two main pages, <a href='music.html'>music</a> and <a href='books.html'>books</a> showcase my favorites from these two art forms. The <a href='challenges.html'>challenges</a> page shows some challenges that I have undertaken for fun.
         </p>
     </div>
 
     <!-- bottom container -->
-    <div>
+    <div class='col_container'>
         <!-- External Links -->
         <div class='container'>
             <p class='body'>
@@ -68,10 +56,8 @@ a:hover {
             </div> 
 
             <!-- copyright info -->
-            <div>
-                <p class='body'>© 2026 venvio<br>
-                Created: 04/10/2025<br>
-                Updated: 07/17/2026 </p>
+            <div class='container'>
+                <p class='body'>© 2026 venvio<br>Updated: 07/17/2026 <br>
             </div>
         </div>
     </div>
