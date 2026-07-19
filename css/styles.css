@@ -40,6 +40,7 @@ a:hover {
 #banner_text {
     position: relative;
     font-size: 50px;
+    color: azure;
 }
 
 #moon_image {
