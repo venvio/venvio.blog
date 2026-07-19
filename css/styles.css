@@ -19,7 +19,7 @@ body.home::before {
     inset: 0;
     background: url('../assets/photos/stars2.jpg') center/cover no-repeat;
     opacity: 0;
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 10s forwards;
     z-index: -1;
 }
 
