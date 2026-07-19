@@ -1,3 +1,52 @@
+/* dynamic scaling for pages 
+html { box-sizing: border-box;}*, *:before, *:after{ box-sizing: inherit;}html, body { height: 100%;}
+*/
+
+*,
+*::before,
+*::after, {
+    box-sizing: border-box;
+}
+
+body.home {
+    margin: 0;
+    position: relative;
+}
+
+body.home::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('../assets/photos/stars2.jpg') center/cover no-repeat;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    z-index: -1;
+}
+
+/* style and animation for links */
+a {
+    color: rgb(241,195,147);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0;
+}
+
+a:hover {
+    color: rgb(117,84,55);
+}
+
+/* ids */
+/* used for index.html banner links */
+#banner_text {
+    position: relative;
+    font-size: 50px;
+}
+
+#moon_image {
+    width: 30%;
+    animation: fadeIn 7s;
+}
+
 /* classes for interactivity */
 .hover-effect {
     color: white;
@@ -7,6 +56,17 @@
 .hover-effect:hover{
     color: red;
 }
+
+/* animation for fading in image */
+.fade_in {
+    animation: fadeIn 7s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 /* main classes */
 .header {
     text-align: center;
@@ -16,28 +76,13 @@
  
 .body {
     text-align: left;
-    color: white;
-    font-size: 18px;
-}
-.background{
-    background-color: black;
+    color: azure;
+    font-size: 25px;
 }
 
 .links {
-    /*magenta*/
-    /*color:rgb(205, 86, 223);*/
-
-    /*green*/
-    /*color: rgb(60, 179, 113);*
-    
-    /*reddish (lol)*/
-    /*color: rgb(255, 0, 122);*/
-    
     /*dark cyan*/
     color: rgb(0,139,139);
-
-    /**/
-   /* color: rgb(0,191,255);*/
 }
 
 .photo {
@@ -46,27 +91,25 @@
 }
 
 /* containers */
-.container {
-    gap: 40px;
-    display: flex;           /* Activates flexbox layout */
-    flex-direction: row;
-    max-width: 800px;
-    min-width: 300px;
-    justify-content: flex-start;
-    margin-left: 0;
+.page_container {
+    position: relative;
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
 }
 
-.banner {
-    height: 500px;
-    width: 800px;
-    background-image: url('assets/photos/horizon-banner.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.container {
+    display: flex;           /* Activates flexbox layout */
+    width: fit-content;
+    flex-direction: row;
+    display: fit-content;
+    margin: 0 auto;
 }
+
+.
 
 .container2 {
   width: 100%;
+  padding: 20px;
   max-width: 800px;
   min-width: 300px;
   margin: 0 auto;
@@ -75,16 +118,14 @@
 .col_container {
   display: flex;           /* Activates flexbox layout */
   flex-direction: column;
-  gap: 40px;               /* Creates space between image and text */
-  padding: 20px;
-  max-width: 1440px;
-  min-width: 300px;
-}
+  justify-content: center;
+}   
 
 .centered_container {
     display: grid;           /* Activates flexbox layout */
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 
