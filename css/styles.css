@@ -19,7 +19,7 @@ body.home::before {
     inset: 0;
     background: url('../assets/photos/stars2.jpg') center/cover no-repeat;
     opacity: 0;
-    animation: fadeIn 5s forwards;
+    animation: fadeIn 3s forwards;
     z-index: -1;
 }
 
@@ -44,7 +44,7 @@ a:hover {
 
 #moon_image {
     width: 30%;
-    animation: fadeIn 7s;
+    animation: fadeIn 3s;
 }
 
 /* classes for interactivity */
@@ -59,7 +59,7 @@ a:hover {
 
 /* animation for fading in image */
 .fade_in {
-    animation: fadeIn 7s;
+    animation: fadeIn 3s;
 }
 
 @keyframes fadeIn {
