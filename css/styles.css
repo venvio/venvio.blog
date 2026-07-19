@@ -17,7 +17,7 @@ body.home::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: url('../assets/photos/stars2.jpg') center/cover no-repeat;
+    background: url('../assets/photos/stars_background.jpg') center/cover no-repeat;
     opacity: 0;
     animation: fadeIn 10s forwards;
     z-index: -1;
