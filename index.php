@@ -6,6 +6,10 @@
     <link rel='stylesheet' href='css/styles.css'>
 </head>
 
+<?php
+    $updated = "08/01/2026";
+?>
+
 <body class='home' style='background-color: black'>
 <main>
 
@@ -56,7 +60,7 @@
 
         <!-- copyright info -->
         <div>
-            <p class='body'>© 2026 venvio<br>Updated: 07/29/2026 <br>
+            <p class='body'>© 2026 venvio<br>Updated: <?php echo "$updated" ?> <br>
         </div>
     </div>
 
