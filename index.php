@@ -7,7 +7,7 @@
 </head>
 
 <?php
-    $updated = "08/02/2026";
+    $updated = "08/03/2026";
 ?>
 
 <body class='home' style='background-color: black'>
@@ -23,14 +23,10 @@
         <center><img src='assets/photos/moon_logo.png' id='moon_image'><center>
     </div>
 
-    <?php
-        echo "hi, php!!! HELLOW OWLRD!!"
-    ?>
-
     <!-- banner div -->
     <div class='container'>
         <p id='banner_text'>
-            <a href='pages/blog.html'>Blog</a>
+            <a href='pages/journal.html'>Journal</a>
             <a href='pages/music.html'>Music</a>
             <a href='pages/books.html'>Books</a>
             <a href='pages/challenges.html'>Challenges</a>
