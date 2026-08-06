@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='../css/styles.css'>
 </head>
 
-<body style='background-color: black;'>
+<body style='background-color: white;'>
 <main>
 <div class='page_container fade_in'>
     <!--header stuff-->
@@ -20,6 +20,12 @@
         <i>Here you will find a collection of blog posts. Less formal, journal-like entries can be found on
             the <a href='journal.html'>journal</a> page.</i>
     </p>
+
+    <p class='body'>Insert your email below if you would like updates when I upload new blog posts.</p>
+    <form method='post' action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>'>
+    Email: <input type='text' name='email'><br>
+    <input type='submit'>
+    </form>
 
     <!-- blog post-->
     <div class='container'>
