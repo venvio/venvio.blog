@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='../css/styles.css'>
 </head>
 
-<body style='background-color: white;'>
+<body style='background-color: black;'>
 <main>
 <div class='page_container fade_in'>
     <!--header stuff-->
@@ -22,9 +22,8 @@
     </p>
 
     <p class='body'>Insert your email below if you would like updates when I upload new blog posts.</p>
-    <form method='post' action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>'>
-    Email: <input type='text' name='email'><br>
-    <input type='submit'>
+    <form method='post' action='../../backend/script.php'>
+    <p class='body'>Email: <input type='text' name='email'> <input type='submit'><br> </p>
     </form>
 
     <!-- blog post-->
@@ -39,3 +38,4 @@
 </main>
 </body>
 </html>
+
