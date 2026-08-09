@@ -7,7 +7,7 @@
 </head>
 
 <?php
-    $updated = "08/03/2026";
+    $updated = "08/09/2026";
 ?>
 
 <body class='home' style='background-color: black'>
