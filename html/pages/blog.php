@@ -22,7 +22,7 @@
     </p>
 
     <p class='body'>Insert your email below if you would like updates when I upload new blog posts.</p>
-    <form method='post' action='../../backend/script.php'>
+    <form method='post' action='submit.php'>
     <p class='body'>Email: <input type='text' name='email'> <input type='submit'><br> </p>
     </form>
 
