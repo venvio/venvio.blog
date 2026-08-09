@@ -4,11 +4,14 @@
     <link rel='icon' href='../assets/favicon/favicon.ico'>
     <link rel='stylesheet' href='../css/styles.css'>
 </head>
+<?php
+    // includes function for connecting to db
+    require_once __DIR__. '/../../backend/get_db.php';
+?>
 
 <?php 
     // globals
-    $db_path = 'test.db';
-    $saved = 0;
+    $saved = false;
 
     // init email and error var
     $email = $emailErr = '';
@@ -45,7 +48,7 @@
 
         // if valid email, add it to db
         if (empty($emailErr)) {
-            $db = new SQLite3($db_path); 
+            $db = get_db(); // connect
             $stmt = $db->prepare(
                     "INSERT INTO subscribers(email) VALUES(:email)"
             );
@@ -53,7 +56,7 @@
             $stmt->execute();
             $db->close();
 
-            $saved = 1;
+            $saved = true;
         }
     ?>
 
@@ -62,7 +65,7 @@
             if (!empty($emailErr)) {
                 echo "$emailErr";
             }
-            elseif ($saved == 1) {
+            elseif ($saved == true) {
                 echo 'Your email has been saved. Thank you!';
             }
             else {
