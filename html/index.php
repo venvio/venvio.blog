@@ -36,7 +36,7 @@
 
     <!-- about section -->
     <div class='col_container' style='background-color: black; border: 2px double rgb(241,195,147); padding: 10px;'>
-        <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. My undergrad was in psychology.
+        <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. I have always been interested in both the sciences and the humanities (my undergraduate degree is in psychology).
         </p>
 
         <p class='body'>You can find journal-style entries on the <a href='pages/journal.html' >journal</a> page.</a> The other two main pages, <a href='pages/music.html'>music</a> and <a href='pages/books.html'>books</a> showcase my favorites from these two art forms. The <a href='pages/challenges.html'>challenges</a> page shows some challenges that I have undertaken for fun.
@@ -51,7 +51,7 @@
             <b>External Links:</b>
             <a href='https://www.youtube.com/@venv_io'>YouTube</a> 
             <a href='https://github.com/venvio'>GitHub</a> 
-            <a href='mailto:waltwest@outlook.com'>Email</a>
+            <a href='mailto:venvio@proton.me'>Email</a>
             </p>
         </div>
 
