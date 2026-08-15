@@ -60,7 +60,7 @@
         }
     ?>
 
-    <p class = 'body'>
+    <p class = 'body' style='text-align: center;'>
         <?php
             if (!empty($emailErr)) {
                 echo "$emailErr";
