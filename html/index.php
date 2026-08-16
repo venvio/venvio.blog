@@ -42,7 +42,7 @@
         </p>
     </div>
 
-    <div class='tooltip'><p class='body' style>Subscribe to my email newsletter below!</p>
+    <div class='tooltip'><p class='body' style='color: #f2b76c;'>Subscribe to my email newsletter below!</p>
         <span class='tooltiptext'>My emails will be sent from "venvio@proton.me"</span>
     </div>
 
