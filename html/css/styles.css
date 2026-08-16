@@ -7,7 +7,7 @@ html { box-sizing: border-box;}*, *:before, *:after{ box-sizing: inherit;}html, 
 *::after, {
     box-sizing: border-box;
 }
-
+                
 body.home {
     margin: 0;
     position: relative;
@@ -25,7 +25,8 @@ body.home::before {
 
 /* style and animation for links */
 a {
-    color: rgb(241,195,147);
+    /*color: rgb(241,195,147);*/
+    color:#f2b76c;
     text-decoration: none;
     transition: color 0.3s ease;
     margin: 0;
@@ -89,6 +90,33 @@ a:hover {
 .photo {
     width: 400px;
     height: 500px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltiptext {
+    visibility: hidden; /* Hidden by default */
+    width: 500px;
+    background-color: #f2b76c;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1; /* Ensure tooltip is displayed above content */
+    top: 0px; /* positions tooltip above cursor */
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+    animation: fadeIn 1s forwards;
+    visibility: visible;
 }
 
 /* containers */

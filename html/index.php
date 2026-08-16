@@ -6,34 +6,6 @@
     <link rel='stylesheet' href='css/styles.css'>
 </head>
 
-<style>
-    /* Tooltip container */
-    .tooltip {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    /* Tooltip text */
-    .tooltiptext {
-      visibility: hidden; /* Hidden by default */
-      width: 500px;
-      background-color: #f2b76c;
-      color: black;
-      text-align: center;
-      padding: 5px 0;
-      border-radius: 6px;
-      position: absolute;
-      z-index: 1; /* Ensure tooltip is displayed above content */
-    }
-
-    /* Show the tooltip text on hover */
-    .tooltip:hover .tooltiptext {
-        animation: fadeIn 1s forwards;
-        visibility: visible;
-    }
-</style>
-
 <?php
     $updated = "08/16/2026";
 ?>
@@ -70,7 +42,7 @@
         </p>
     </div>
 
-    <div class='tooltip'><p class='body'><a>Subscribe to my email newsletter below!</a></p>
+    <div class='tooltip'><p class='body' style>Subscribe to my email newsletter below!</p>
         <span class='tooltiptext'>My emails will be sent from "venvio@proton.me"</span>
     </div>
 
