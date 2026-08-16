@@ -35,7 +35,7 @@
 </style>
 
 <?php
-    $updated = "08/15/2026";
+    $updated = "08/16/2026";
 ?>
 
 <body class='home' style='background-color: black'>
@@ -54,7 +54,6 @@
     <!-- banner div -->
     <div class='container'>
         <p id='banner_text'>
-            <a href='pages/blog.php'>Blog</a>
             <a href='pages/journal.html'>Journal</a>
             <a href='pages/music.html'>Music</a>
             <a href='pages/books.html'>Books</a>
