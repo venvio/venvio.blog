@@ -38,7 +38,7 @@
         <p class='body'>I am a computer science graduate student from the midwestern U.S. Most of my practical experience is in designing data pipelines for Alzheimer's Disease research. I have always been interested in both the sciences and the humanities (my undergraduate degree is in psychology).
         </p>
 
-        <p class='body'>You can find journal-style entries on the <a href='pages/journal.html' >journal</a> page.</a> The other two main pages, <a href='pages/music.html'>music</a> and <a href='pages/books.html'>books</a> showcase my favorites from these two art forms. The <a href='pages/challenges.html'>challenges</a> page shows some challenges that I have undertaken for fun.
+        <p class='body'>You can find journal-style entries on the <a href='pages/journal.html'>journal</a> page.</a> The other two main pages, <a href='pages/music.html'>music</a> and <a href='pages/books.html'>books</a> showcase my favorites from these two art forms. The <a href='pages/challenges.html'>challenges</a> page shows some challenges that I have undertaken for fun.
         </p>
     </div>
 
@@ -54,11 +54,13 @@
       <label for="bd-email" class='body'>Email:</label>
       <input type="email" name="email" id="bd-email" />
       <input type="submit" value="Subscribe" />
+
       <p>
         <a href="https://buttondown.com/refer/venvio" target="_blank">
           Powered by Buttondown.
         </a>
       </p>
+
     </form>
     <!-- bottom container -->
     <div class='col_container'>

@@ -13,7 +13,7 @@
     <a href='../index.php' style='font-size: 30px;'>&lt;&lt; Home</a>
 
     <div class='container' >
-        <center><img src='../assets/photos/moon_logo.png' id='moon_image'><center>
+        <a href='../index.php'><center><img src='../assets/photos/moon_logo.png' id='moon_image'><center></a>
     </div>
 
     <p class='body' style='text-align: center;'>
